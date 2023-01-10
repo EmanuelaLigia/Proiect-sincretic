@@ -66,6 +66,48 @@ void sumads()
 	printf("\n");
 }
 
+void minmaxdp()
+{
+	int min = 9, max = 0;
+	int i, j;
+	for (i = 0;i < l;i++)
+		for (j = 0;j < c;j++)
+		{
+			if (i > j)
+			{
+				if (m[i][j] < min)
+					min = m[i][j];
+				if (m[i][j] > max)
+					max = m[i][j];
+
+			}
+		}
+	printf("\nMINIMUL ESTE %d", min);
+	printf("\nMAXIMUL ESTE %d", max);
+	printf("\n");
+}
+
+
+void minmaxds()
+{
+	int min = 9, max = 0;
+	int i, j;
+	for (i = 0;i < l;i++)
+		for (j = 0;j < c;j++)
+		{
+			if (i < j)
+			{
+				if (m[i][j] < min)
+					min = m[i][j];
+				if (m[i][j] > max)
+					max = m[i][j];
+
+			}
+		}
+	printf("\nMINIMUL ESTE %d", min);
+	printf("\nMAXIMUL ESTE %d", max);
+	printf("\n");
+}
 
 
 int main()
