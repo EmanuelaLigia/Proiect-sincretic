@@ -36,6 +36,37 @@ void afisare()
 	printf("\n");
 }
 
+void sumadp()
+{
+	int s = 0;
+	int i, j;
+	for (i = 0;i < l;i++)
+		for (j = 0;j < c;j++)
+		{
+			if (i == j)
+				s = s + m[i][i];
+		}
+	printf("%d", s);
+	printf("\n");
+
+}
+
+void sumads()
+{
+	int s = 0;
+	int i, j;
+	for (i = 0;i < l;i++)
+		for (j = 0;j < c;j++)
+		{
+			if (i + j == c - 1)
+				s = s + m[i][j];
+
+		}
+	printf("%d", s);
+	printf("\n");
+}
+
+
 
 int main()
 {
