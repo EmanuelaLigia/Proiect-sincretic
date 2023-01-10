@@ -21,6 +21,22 @@ int initializare()
 		}
 }
 
+void afisare()
+{
+	int i, j;
+	for (i = 0;i < l;i++)
+	{
+		printf("\n");
+		for (j = 0;j < c;j++)
+		{
+			printf("%d ", m[i][j]);
+
+		}
+	}
+	printf("\n");
+}
+
+
 int main()
 {
 
