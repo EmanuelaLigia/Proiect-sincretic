@@ -5,7 +5,7 @@
 int m[N][N];
 int l, c;
 
-int initializare()
+void initializare()
 {
 	int i, j;
 	printf("\nDati numarul de linii: ");
