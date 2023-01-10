@@ -112,7 +112,49 @@ void minmaxds()
 
 int main()
 {
-
+		system("Color 9");
+		int opt;
+		while (1) {
+			printf("\n---------MENIU---------\n");
+			printf("\n1.Initializare matrice\n");
+			printf("2.Afisare matrice\n");
+			printf("3.Calcularea sumei elementelor de pe diagonala principala\n");
+			printf("4.Calcularea sumei elementelor de pe diagonala secundara\n");
+			printf("5.Afisarea minimului si maximului elementelor aflate sub diagonala principala\n");
+			printf("6.Afisarea minimului si maximului elementelor aflate sub diagonala secundara\n");
+			printf("0.Iesire\n");
+			printf("\nIntroduceti optiunea dorita: ");
+			scanf("%d", &opt);
+			switch (opt)
+			{
+			case 0:
+				printf("\nLA REVEDERE!(^_^)\n");
+				exit(1);
+			case 1:
+				initializare();
+				break;
+			case 2:
+				afisare();
+				break;
+			case 3:
+				printf("\nSuma elementelor de pe diagonala principala este:");
+				sumadp();
+				break;
+			case 4:
+				printf("\nSuma elementelor de pe diagonala secundara este:");
+				sumads();
+				break;
+			case 5:
+				minmaxdp();
+				break;
+			case 6:
+				minmaxds();
+				break;
+			default:
+				printf("\nTASTATI O OPTIUNE EXISTENTA!\n");
+				break;
+			}
+		};
 
 	return 0;
 }
